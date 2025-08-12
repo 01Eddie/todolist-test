@@ -24,19 +24,6 @@ describe('CrudService', () => {
     crudService = new CrudService(supabaseServiceMock);
   });
 
-  // it('devuelve datos cuando existen en la tabla', async () => {
-
-  //   // Simula el chain de Supabase
-  //   supabaseServiceMock.getClient.mockReturnValue({
-  //     from: () => ({ 
-  //       select: () => { data: mockData, error: null },
-  //     }),
-  //   });
-
-  //   const result = await crudService.findAllToDo();
-  //   expect(result).toEqual(mockData);
-  // });
-
   it('debería devolver datos si existen', async () => {
     const supabaseMock = {
       getClient: () => ({

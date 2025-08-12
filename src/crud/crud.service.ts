@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { SupabaseService } from 'src/supabase/supabase.service';
+import { SupabaseService } from '../supabase/supabase.service';
 import { CreateToDoDto } from './dto/create-todo.dto';
 import { UpdateToDoDto } from './dto/update-todo.dto';
 
